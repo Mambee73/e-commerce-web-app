@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #007bff; 
+  --accent-color: #ff8c00; 
+  --bg-color: #f8f9fa; 
+  --text-color: #343a40; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6, .card-title {
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-light.bg-light,
+.navbar-brand,
+.nav-link {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+.btn-primary,
+.btn-secondary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+}
+
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
