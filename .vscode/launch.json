@@ -7,7 +7,7 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open AdminBlog.html",
+            "name": "Open index.html",
             "file": "c:\\Users\\Nicol\\OneDrive\\Escritorio\\FullStack-II Evaluacion-1\\e-commerce-web-app\\index.html"
         }
     ]
