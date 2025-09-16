@@ -6,12 +6,10 @@
   <title>Ropa - Lo quieres, te lo vendo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -24,100 +22,43 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="inicioSesion.html">Iniciar Sesión</a></li>
           <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="categoriasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Categorías
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="categoriasDropdown">
-              <li><a class="dropdown-item active" href="ropa.html">Ropa</a></li>
-              <li><a class="dropdown-item" href="juguetes.html">Juguetes</a></li>
-              <li><a class="dropdown-item" href="tecnologia.html">Tecnología</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="Blogs.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="carrito.html">
-              <i class="bi bi-cart-fill"></i> Carrito
-            </a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" href="ropa.html">Ropa</a></li>
+          <li class="nav-item"><a class="nav-link" href="juguetes.html">Juguetes</a></li>
+          <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnología</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrito.html"><i class="bi bi-cart-fill"></i> Carrito</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-
   <main class="container py-5 mt-5">
     <section class="my-5">
       <h2 class="text-center mb-4">Ropa</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
+
         <div class="col">
           <div class="card h-100 shadow-sm">
             <img src="img/PoleronNegro.jpg" class="card-img-top p-3" alt="Polerón Negro">
             <div class="card-body text-center">
-              <span class="badge bg-secondary mb-2">Ropa</span>
               <h5 class="card-title">Polerón Negro</h5>
               <p class="card-price"><strong>Precio: $19.990 CLP</strong></p>
-              <button class="btn btn-primary mt-3">Comprar</button>
+              <button class="btn btn-primary mt-3 btn-agregar-carrito" data-name="Polerón Negro" data-price="19990">
+                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+              </button>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card h-100 shadow-sm">
             <img src="img/VestidoRojo.jpg" class="card-img-top p-3" alt="Vestido Rojo">
             <div class="card-body text-center">
-              <span class="badge bg-secondary mb-2">Ropa</span>
               <h5 class="card-title">Vestido Rojo</h5>
               <p class="card-price"><strong>Precio: $24.990 CLP</strong></p>
-              <button class="btn btn-primary mt-3">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="img/ChaquetaCuero.jpg" class="card-img-top p-3" alt="Chaqueta de Cuero">
-            <div class="card-body text-center">
-              <span class="badge bg-secondary mb-2">Ropa</span>
-              <h5 class="card-title">Chaqueta de Cuero</h5>
-              <p class="card-price"><strong>Precio: $49.990 CLP</strong></p>
-              <button class="btn btn-primary mt-3">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="img/CamisaBlanca.jpg" class="card-img-top p-3" alt="Camisa Blanca">
-            <div class="card-body text-center">
-              <span class="badge bg-secondary mb-2">Ropa</span>
-              <h5 class="card-title">Camisa Blanca</h5>
-              <p class="card-price"><strong>Precio: $14.990 CLP</strong></p>
-              <button class="btn btn-primary mt-3">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="img/jeans.jpg" class="card-img-top p-3" alt="Pantalón Jeans">
-            <div class="card-body text-center">
-              <span class="badge bg-secondary mb-2">Ropa</span>
-              <h5 class="card-title">Pantalón Jeans</h5>
-              <p class="card-price"><strong>Precio: $22.990 CLP</strong></p>
-              <button class="btn btn-primary mt-3">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="img/Zapatillas.jpg" class="card-img-top p-3" alt="Zapatillas Urbanas">
-            <div class="card-body text-center">
-              <span class="badge bg-secondary mb-2">Ropa</span>
-              <h5 class="card-title">Zapatillas Urbanas</h5>
-              <p class="card-price"><strong>Precio: $34.990 CLP</strong></p>
-              <button class="btn btn-primary mt-3">Comprar</button>
+              <button class="btn btn-primary mt-3 btn-agregar-carrito" data-name="Vestido Rojo" data-price="24990">
+                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+              </button>
             </div>
           </div>
         </div>
@@ -126,12 +67,11 @@
     </section>
   </main>
 
-
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p class="mb-0">&copy; 2025 Lo quieres, te lo vendo. Todos los derechos reservados.</p>
   </footer>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="carrito-compra.js"></script>
 </body>
 </html>
