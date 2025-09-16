@@ -1,81 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ropa - Lo quieres, te lo vendo</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ropa - Lo quieres, te lo vendo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logo act1.2 fullstak II.png" alt="Logotipo" width="120" height="96">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                            <a class="nav-link" href="productos.html">Productos</a>
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                            <a class="nav-link" href="juguetes.html">Juguetes</a>
-                            <a class="nav-link active" aria-current="page" href="ropa.html">Ropa</a>
-                            <a class="nav-link" href="carrito.html">
-                                <img src="img/carrito de compras.png" alt="Carrito de Compras" width="60" height="50" class="logito">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo act1.2 fullstak II.png" alt="Logotipo" width="120" height="96">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <main class="container py-5 mt-5">
-            <section class="my-5">
-                <h2 class="text-center mb-4">Ropa</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 shadow-sm" data-name="Poleron Negro" data-price="19990">
-                            <img src="img/producto9.png" class="card-img-top p-3" alt="Polerón Negro">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Polerón Negro</h5>
-                                <p class="card-text">Polerón casual para cualquier ocasión.</p>
-                                <p class="card-price"><strong>Precio: $19.990 CLP</strong></p>
-                                <button class="btn btn-primary mt-3 add-to-cart">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm" data-name="Vestido" data-price="5990">
-                            <img src="img/producto7.jpg" class="card-img-top p-3" alt="Vestido">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Vestido</h5>
-                                <p class="card-text">Vestido color azul de temporada.</p>
-                                <p class="card-price"><strong>Precio: $5.990 CLP</strong></p>
-                                <button class="btn btn-primary mt-3 add-to-cart">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="inicioSesion.html">Iniciar Sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="categoriasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="categoriasDropdown">
+              <li><a class="dropdown-item active" href="ropa.html">Ropa</a></li>
+              <li><a class="dropdown-item" href="juguetes.html">Juguetes</a></li>
+              <li><a class="dropdown-item" href="tecnologia.html">Tecnología</a></li>
+            </ul>
+          </li>
 
-        <footer class="bg-dark text-white text-center py-3 mt-5">
-            <p>&copy; 2024 Lo quieres, te lo vendo. Todos los derechos reservados.</p>
-        </footer>
+          <li class="nav-item"><a class="nav-link" href="Blogs.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">
+              <i class="bi bi-cart-fill"></i> Carrito
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="carrito-compra.js"></script>
+
+  <main class="container py-5 mt-5">
+    <section class="my-5">
+      <h2 class="text-center mb-4">Ropa</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ropa1.jpg" class="card-img-top p-3" alt="Polerón Negro">
+            <div class="card-body text-center">
+              <span class="badge bg-secondary mb-2">Ropa</span>
+              <h5 class="card-title">Polerón Negro</h5>
+              <p class="card-price"><strong>Precio: $19.990 CLP</strong></p>
+              <button class="btn btn-primary mt-3">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ropa2.jpg" class="card-img-top p-3" alt="Vestido Rojo">
+            <div class="card-body text-center">
+              <span class="badge bg-secondary mb-2">Ropa</span>
+              <h5 class="card-title">Vestido Rojo</h5>
+              <p class="card-price"><strong>Precio: $24.990 CLP</strong></p>
+              <button class="btn btn-primary mt-3">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ropa3.jpg" class="card-img-top p-3" alt="Chaqueta de Cuero">
+            <div class="card-body text-center">
+              <span class="badge bg-secondary mb-2">Ropa</span>
+              <h5 class="card-title">Chaqueta de Cuero</h5>
+              <p class="card-price"><strong>Precio: $49.990 CLP</strong></p>
+              <button class="btn btn-primary mt-3">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ropa4.jpg" class="card-img-top p-3" alt="Camisa Blanca">
+            <div class="card-body text-center">
+              <span class="badge bg-secondary mb-2">Ropa</span>
+              <h5 class="card-title">Camisa Blanca</h5>
+              <p class="card-price"><strong>Precio: $14.990 CLP</strong></p>
+              <button class="btn btn-primary mt-3">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ropa5.jpg" class="card-img-top p-3" alt="Pantalón Jeans">
+            <div class="card-body text-center">
+              <span class="badge bg-secondary mb-2">Ropa</span>
+              <h5 class="card-title">Pantalón Jeans</h5>
+              <p class="card-price"><strong>Precio: $22.990 CLP</strong></p>
+              <button class="btn btn-primary mt-3">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ropa6.jpg" class="card-img-top p-3" alt="Zapatillas Urbanas">
+            <div class="card-body text-center">
+              <span class="badge bg-secondary mb-2">Ropa</span>
+              <h5 class="card-title">Zapatillas Urbanas</h5>
+              <p class="card-price"><strong>Precio: $34.990 CLP</strong></p>
+              <button class="btn btn-primary mt-3">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Lo quieres, te lo vendo. Todos los derechos reservados.</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

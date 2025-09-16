@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #007bff; 
-  --accent-color: #ff8c00; 
-  --bg-color: #f8f9fa; 
-  --text-color: #343a40; 
+  --primary-color: #E67E6B; /* Terracota */
+  --accent-color: #64C6E9;  /* Azul Cielo */
+  --bg-color: #F7F4E9;      /* Crema */
+  --text-color: #4A4A4A;    /* Un gris oscuro para buen contraste */
 }
 
 body {
